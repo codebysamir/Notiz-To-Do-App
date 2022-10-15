@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+*{
+  margin: 0;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #7f53ac;
+  background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+  margin: 6rem 0 5.9rem 30rem;
+  overflow: hidden;
+}
+
+#todolist-id-container{
+  display: block;
+}
+
+.todolist-container{
+  min-height: 10vh;
+  max-height: 75vh;
+  height: 75vh;
+  background-color: #f3f3f3;
+  width: 30vw;
+  overflow-x: scroll;
+}
+
+.profil-container{
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 26.7vw;
+  z-index: 2;
+}
+
+.list-container{
+  background-color: #f3f3f3;
+  padding: 6rem 1.5rem 1.5rem 1.5rem;
+}
+
+h1{
+  padding-bottom: 1rem;
+  display: inline-block;
+}
+
+.fa-align-justify{
+  position: relative;
+  left: 58%;
+  color: #d7beff;;
+  cursor: pointer;
+}
+
+.fa-th-large{
+  position: relative;
+  left: 55%;
+  color: #d7beff;
+  cursor: pointer;
+}
+
+.icon-active{
+  color: #732be9;;
+  font-size: 1.2rem;
+}
+
+.add-list{
+  background-color: #732be9;
+  color: white;
+  font-size: 3rem;
+  font-weight: 100;
+  padding-bottom: 1rem;
+  width: 4.1vw;
+  height: 3vw;
+  text-align: center;
+  position: relative;
+  left: 85%;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#xlist-id-container{
+  display: active;
+}
+
+.list_titel-container{
+  background-color: #732be9;
+  color: white;
+  padding: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  z-index: 3;
+  width: 26.7vw;
+  text-align: center;
+}
+
+h2{
+  display: inline-block;
+}
+
+.fa-arrow-left{
+  right: 55%;
+  position: relative;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.listoflist-container{
+  padding: 6rem 1.5rem 1.5rem 0;
+}
+
+.note-entry-list{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.resolvedlist-container{
+  text-decoration: line-through;
+  font-weight: 100;
+  padding: 2rem 1.5rem 5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+  justify-content: right;
+}
+
+.fa-check{
+  position: relative;
+  cursor: pointer;
+  color: #732be9;
+}
+
+.fa-check:hover{
+  color: #55ce5b;
+}
+
+.fa-plus-circle{
+  position: relative;
+  cursor: pointer;
+}
+
+.addnote-container{
+  padding: 1.5rem;
+  display: flex;
+  position: fixed;
+  top: 78%;
+  z-index: 3;
+  width: 26.6vw;
+  background-color: inherit;
+}
+
+.add-note-style{
+  position: absolute;
+  right: 5%;
+}
+
+.note-list{
+  list-style-type: none;
+  padding: 0.25rem 0;
+  font-size: 1.1rem;
+  width: 91%;
+  word-wrap: break-word;
+  justify-content: left;
+}
+
+.input-style{
+  background-color: inherit;
+  border-style: none;
+  border-bottom: solid;
+  border-color: #732be9;
+  border-width: thin;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.input-style::placeholder{
+  font-size: 1.1rem;
+}
+
+.input-style:focus{
+  outline: none;
+}
+
+.button-style{
+  background-color: inherit;
+  border-style: none;
+  border-bottom: solid;
+  border-color: #732be9;
+  border-width: thin;
+  color: #732be9;
+  margin-left: -0.3rem;
+  cursor: pointer;
+  padding-bottom: 0.5rem;
+}
+
+.button-style:hover{
+  color: #d7beff;
+}
+
+#Add-List-Container{
+  height: 20vh;
+  padding: 1.5rem;
+  z-index: 2;
+  position: absolute;
+  bottom: 40%;
+  right: 35%;
+  border: solid;
+  display: none;
+}
+
+#Add-List-Container h2{
+  position: absolute;
+}
+
+#List-Namen-Input{
+align-self: center;
+}
+
+#Add-ok-Button, #Cancel-Button{
+  align-self: center;
+  margin: auto;
+}
+
+.fa-trash-alt {
+  position: relative;
+  color: #732be9;
+  cursor: pointer;
+}
+
+.fa-trash-alt:hover{
+  color: #d65959;
+}
+
+dt.list-view{
+  width: 23.5vw;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2)
+}
+
+dt.grid-view{
+  width: 7vw;
+  height: 5vw;
+  padding: 2rem 2rem 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  background-color: white;
+  cursor: pointer;
+  margin-right: 1rem;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2)
+}
+
+#lists{
+  position: relative;
+}
+
+.lists-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  /*grid-template-columns: 1fr 1fr;*/
+}
+
+.fas.fa-times-circle{
+  display: none;
+}
+
+.fa-times-circle{
+  /*position: absolute;*/
+  color: #732be9;
+  cursor: pointer;
+}
+
+.show-icon{
+  display: initial !important;
+}
+
+.delete-listview{
+  margin-left: -1rem;
+  margin-top: 1rem;
+}
+
+.delete-gridview{
+  /*position: relative;
+  display: inline-grid;
+  flex-wrap: wrap;
+  flex: 1;
+  right: 3%;
+  margin-right: -0.8rem;*/
+  margin-left: -2rem;
+  margin-right: 1rem;
+}
+
+.sub-listview{
+  display: inline-block;
+  font-size: 0.8rem;
+  text-align: right;
+  min-width: 70%;
+  max-width: 80%;
+  width: 70%;
+  color: grey;
+  position: relative;
+}
+
+.sub-gridview{
+  display: block;
+  font-size: 0.8rem;
+  color: grey;
+  position: relative;
+  top: 10%;
+}
+
+.fa-edit{
+  cursor: pointer;
+  color: #732be9;
+}
+
+.fa-edit:hover{
+  color: #e2bf5f;
+}
+
+.fa-ellipsis-v {
+  padding-left: 0.9rem;
+  line-height: 1.5;
+  cursor: pointer;
+  color: #732be9;
+}
+
+.fa-ellipsis-v:hover{
+  color: #d7beff;
+}
+
+.option-container {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.option-body{
+  background-color: white;
+  border: solid;
+  margin: 0;
+  padding: 2px;
+  width: 1rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 5;
+  position: absolute;
+  transform: translate(5%, -70%) scale(0);
+}
+
+.edit-modus{
+  color: grey;
+}
+
+.edit-modus:focus{
+  border-bottom-style: solid;
+  border-bottom-color: #732be9;
+  transition: width .35s ease-in-out;
+  width: 18vw;
+}
+
+.active{
+  transform: translate(-140%, -80%) scale(1);
+}

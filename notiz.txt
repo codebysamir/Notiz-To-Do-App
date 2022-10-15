@@ -1,0 +1,9 @@
+- ui design
+- leerer array für die Liste
+- input feld inkl. hinzufügen button
+- Einträge müssen entfernt werden können und bearbeitet werden
+- Einträge vllt verschiebbar?
+- Einträge checkbox damit sie als erledigt gekennzeichnet werden
+
+//localeStorage ??
+//login, login-bereich, anmeldefenster

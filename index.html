@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" charset="utf-8" defer></script>
+  <script src="https://kit.fontawesome.com/1f679c8769.js" crossorigin="anonymous"></script>
+
+  <title>Notiz To-Do-List</title>
+</head>
+<body>
+  <div id="todolist-id-container" class="todolist-container">
+    <div class="profil-container">
+      <h3>To-Do-List</h3>
+    </div>
+    <div class="list-container">
+      <h1>My Lists</h1>
+      <i id="grid-icon" class="fas fa-th-large"></i>
+      <i id="list-icon" class="fas fa-align-justify icon-active"></i>
+      <dl id="lists" class="lists-container">
+      </dl>
+      <div class="add-list" id="add-list-button">
+        <span>+</span>
+      </div>
+    </div>
+  </div>
+  <div id="Add-List-Container" class="todolist-container">
+    <h2>Wie soll die Liste heissen?</h2>
+    <input id="List-Namen-Input" class="input-style" type="text" placeholder="Name für die Liste">
+    <button id="Add-ok-Button" class="button-style">ADD</button>
+    <button id="Cancel-Button" class="button-style">CANCEL</button>
+  </div>
+</body>
+</html>
